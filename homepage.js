@@ -8,21 +8,21 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 document.querySelector('#Startnav').addEventListener('click', Sclick)
 function Sclick() {
-    document.querySelector('#Start').scrollIntoView('#Start')
+    document.querySelector('#Start').scrollIntoView({behavior: 'smooth'})
 }
 document.querySelector('#Projectnav').addEventListener('click', Pclick)
 function Pclick() {
-    document.querySelector('#Projects').scrollIntoView('#Projects')
+    document.querySelector('#Projects').scrollIntoView({behavior: 'smooth'})
 }
 document.querySelector('#Experiencenav').addEventListener('click', Eclick)
 function Eclick() {
-    document.querySelector('#Experience').scrollIntoView('#Experience')
+    document.querySelector('#Experience').scrollIntoView({behavior: 'smooth'})
 }
 document.querySelector('#Educationnav').addEventListener('click', Expclick)
 function Expclick() {
-    document.querySelector('#Education').scrollIntoView('#Education')
+    document.querySelector('#Education').scrollIntoView({behavior: 'smooth'})
 }
 document.querySelector('#My_interestnav').addEventListener('click', interclick)
 function interclick() {
-    document.querySelector('#My_interest').scrollIntoView('#My_interestnav')
+    document.querySelector('#My_interest').scrollIntoView({behavior: 'smooth'})
 }
