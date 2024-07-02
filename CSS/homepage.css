@@ -1,0 +1,204 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.prpic{
+    margin-left: 1%;
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+.navbar {
+    margin: 0%;
+    position: fixed;
+    background: rgba(255, 255, 255, 1); /* Semi-transparent white background */
+    width: 100%;
+    z-index: 100; /* Ensure header is on top of other content */
+    display: flex;
+    justify-content: space-between;
+}
+header nav ul {
+    display: flex;
+    margin: 0%;
+    margin-top: 4px;
+    width: 100%;
+    text-align: center;
+}
+header nav ul li {
+    display: inline-block;
+    /* Display as inline block */
+    padding: 8px 16px; /* Padding for each navigation item */
+    border: 1px solid black;
+    color: black;
+    border-radius: 10px;
+    margin-right: 5px;
+    text-align: center;
+}
+.toggle-button{
+    position: absolute;
+    top: .75rem; 
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px; 
+    height: 21px;
+    cursor: pointer;
+}
+.brandtitle{
+    font-size: 1.5rem;
+    color: black;
+}
+.toggle-button .bar{
+    height: 5px;
+    width: 100%;
+    background-color: black;
+    border-radius: 10px;
+}
+header nav ul li:hover {
+    background-color: black;
+    color: white;
+}
+body {
+    /*background-image: url('bg.jpeg');
+    background-size: cover;*/
+    background-color: black;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+    overflow-y: auto; /* Allow vertical scrolling */
+    margin: 0;
+    font-size: 16px; /* Adjust font size as needed */
+    color: white; /* Default text color */
+}
+body.lock-scroll {
+    position: fixed;
+    inset: 0;
+    top: 0;
+    left: 0;
+}
+section {
+    height: 100vh; /* Full viewport height */
+    width: calc(100%-20px); /* Adjusted width to accommodate margin */
+    clear: both;
+    transition: margin-left 0.3s; /* Faster transition for better responsiveness */
+    scroll-snap-type: y mandatory; /* Enable snapping behavior */
+    overflow-y: auto; /* Allow vertical scrolling */
+    font-size: 1.5rem; /* Adjust font size as needed */
+    padding-top: 20vh; /* Adjusted padding top for section */
+}
+.section {
+    height: 100vh; /* Full viewport height */
+    width: calc(100%-20px); /* Adjusted width to accommodate margin */
+    scroll-snap-align: start; /* Snap to the start of each section */
+    scroll-snap-stop: always;
+    padding-top: 30vh; /* Adjusted padding top for section */
+    padding-left: 150px;
+    
+    list-style: disc;
+}
+.prpic{
+    display: flex;
+    h1{
+        margin-left: 10px;
+    }
+}
+#propic {
+    height: 42px; /* Adjust height as needed */
+    width: 45px;  /* Adjust width as needed */
+    object-fit: cover;
+    border-radius: 50%; /* Make the image circular */
+    border: 4px solid black;
+    background-repeat: no-repeat;
+}
+#instagramlogo, #linkedinlogo, #githublogo {
+    height: 200px;
+    width: 200px;
+    padding-top: 120px;
+    padding-left: 50px;
+    display: inline-block;
+    justify-content: space-between;
+}
+#githublogo{
+    padding-left: 80px;
+}
+#Projects {
+    position: relative;
+}
+#projectimg1 {
+    height: auto;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    /* Optional: to add some margin from the edges */
+}
+#projectimg{
+    margin-left: 0%;
+    position: relative;
+    height: 40%;
+    width: 80%;
+    left: -20px;
+    object-fit: cover;
+    border-radius: 1% 40% 1% 0%;
+    transition: 300ms;
+    left: -40px;
+    right: -20px;
+}
+#projectimg:hover{
+    margin-left: 0%;
+    position: relative;
+    height: 60%;
+    width: 100%;
+    left: -20px;
+    object-fit: cover;
+    border-radius: 1% 30% 1% 0%;
+}
+@media screen and (max-width: 830px) {
+    .navbarlinks {
+        display: none;
+        width: 100%;
+    }
+    section {
+        margin-right: 20px;
+        width: calc(100% - 40px); /* Adjusted width for small screens */
+    }
+    .toggle-button {
+        display: flex;
+    }
+    .navbar{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    #Menu {
+        flex-direction: column;
+        width: 100%;
+    }
+    .navbarlinks li {
+        margin-right: 2%;
+        margin-left: 2%;
+        text-align: center;
+    }
+    .navbarlinks.active{
+        display: flex !important;
+        flex-direction: column;
+    }
+    #instagramlogo, #linkedinlogo, #githublogo{
+        display: block;
+    }
+    #My_interest{
+        padding-top: 150px;
+    }
+    #projectimg{
+        margin: 0%;
+    }
+}
+ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+li {
+    margin-bottom: 5px;
+}
+.post{
+    list-style-type: none;
+}
