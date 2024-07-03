@@ -90,9 +90,11 @@ section {
     width: calc(100%-20px); /* Adjusted width to accommodate margin */
     scroll-snap-align: start; /* Snap to the start of each section */
     scroll-snap-stop: always;
+    padding-right: 150px;
     padding-top: 30vh; /* Adjusted padding top for section */
     padding-left: 150px;
     list-style: disc;
+    transition: 300ms;
 }
 .prpic{
     display: flex;
@@ -152,8 +154,7 @@ section {
     border-radius: 1px 140px 1px 0px;
 }
 #button{
-    height: 30%;
-    width: 87%;
+    width: 20%;
     background-color: white;
     color: black;
     display: flex;
@@ -181,8 +182,12 @@ section {
         width: 100%;
     }
     section {
-        margin-right: 20px;
-        width: calc(100% - 40px); /* Adjusted width for small screens */
+        width: calc(100%); /* Adjusted width for small screens */
+        transition: 300ms;
+    }
+    .section{
+        padding-right: 100px;
+        font-size: 20px;
     }
     .toggle-button {
         display: flex;
@@ -213,6 +218,9 @@ section {
     #projectimg{
         margin: 0%;
     }
+    .brandtitle{
+        transition: 300ms;
+    }
 }
 ul {
     list-style-type: disc;
@@ -224,4 +232,26 @@ li {
 }
 .post{
     list-style-type: none;
+}
+@media screen and (max-width: 400px) {
+    .section{
+        padding-top: 25%;
+        margin: 0%;
+        padding-left: 40px;
+        padding-right: 50px;
+        transition: 300ms;
+    }
+    .brandtitle{
+        font-size: 110%;
+        padding-top: 5px;
+    }
+    #projectimg{
+        display: none;
+    }
+}
+@media screen and (max-width:300px) {
+    .brandtitle{
+        font-size: 90%;
+        padding-top: 8px;
+    }
 }
