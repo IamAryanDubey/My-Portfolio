@@ -118,9 +118,6 @@ section {
     display: inline-block;
     justify-content: space-between;
 }
-#githublogo{
-    padding-left: 80px;
-}
 #Projects {
     position: relative;
 }
@@ -154,7 +151,7 @@ section {
     border-radius: 1px 140px 1px 0px;
 }
 #button{
-    width: 20%;
+    width: 30%;
     background-color: white;
     color: black;
     display: flex;
@@ -174,7 +171,7 @@ section {
     font-size: large;
 }
 #lastClickMe{
-    padding-top: 80px;
+    padding-top: 10px;
 }
 @media screen and (max-width: 830px) {
     .navbarlinks {
@@ -248,10 +245,24 @@ li {
     #projectimg{
         display: none;
     }
+    #instagramlogo, #linkedinlogo, #githublogo{
+        height: 100px;
+        width: 100px;
+        padding-top: 5%;
+    }
+    #githublogo{
+        top: -80px;
+    }
+    #mailtext{
+        font-size: medium;
+    }
 }
 @media screen and (max-width:300px) {
     .brandtitle{
         font-size: 90%;
         padding-top: 8px;
+    }
+    #mailtext{
+        font-size: medium;
     }
 }
