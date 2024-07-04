@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 document.querySelector('#Startnav').addEventListener('click', Sclick)
 function Sclick() {
-    document.querySelector('#Start').scrollIntoView({behavior: 'smooth'})
+    document.querySelector('#Start').scrollIntoView({behavior: 'smooth'},{hi})
 }
 document.querySelector('#Projectnav').addEventListener('click', Pclick)
 function Pclick() {

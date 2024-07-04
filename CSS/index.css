@@ -136,7 +136,7 @@ section {
     width: 60%;
     left: -20px;
     object-fit: cover;
-    border-radius: 1px 140px 1px 0px;
+    border-radius: 1px 140px 140px 0px;
     transition: 300ms;
     left: -80px;
     right: -20px;
@@ -144,11 +144,10 @@ section {
 #projectimg:hover{
     margin-left: 0%;
     position: relative;
-    height: 60%;
     width: 70%;
     left: -20px;
     object-fit: cover;
-    border-radius: 1px 140px 1px 0px;
+    border-radius: 1px 140px 140px 0px;
 }
 #button{
     width: 30%;
@@ -171,7 +170,7 @@ section {
     font-size: large;
 }
 #lastClickMe{
-    padding-top: 10px;
+    padding-top: 50px;
 }
 @media screen and (max-width: 830px) {
     .navbarlinks {
