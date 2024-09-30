@@ -8,7 +8,6 @@ This portfolio features a selection of my work, highlighting my expertise in:
 
 - **Web Development**: Building responsive and user-friendly websites.
 - **Programming**: Proficient in languages like Python, Java, and JavaScript.
-- **Problem-Solving**: Tackling complex challenges with innovative solutions.
 
 You will find detailed descriptions of my projects, the technologies used, and the impact of each project.
 
